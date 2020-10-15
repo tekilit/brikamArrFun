@@ -54,8 +54,24 @@ console.log(separarPalabras())
 
 // 8.- Crea la función repetirString que acepte como argumento un string y un número y devuelva un string que sea el resultado de concatenar el primer string el número dado de veces
 
+function repeat_string(string, num) 
+  {
+    if ((string == null) || (num < 0) || (num === Infinity) || (num == null))
+      {
+        return('Error in string or count.');
+      }
+        num = num | 0; // Floor count.
+    return new Array(num + 1).join(string);
+  }
+console.log(repeat_string('a', 4));
+console.log(repeat_string('a'));
+console.log(repeat_string('a', -2)); 
+console.log(repeat_string('a', Infinity));
+
+
  // 9.- Crea la función esPrimo que acepte como argumento un número y devuelva true si es primo y false si no lo es
 
+ 
 // Mezclando arrays y funciones
  // 10.- Crear la función ordenarArray que acepta como argumento un array de números y devuelva un array ordenado de menor a mayor
 
